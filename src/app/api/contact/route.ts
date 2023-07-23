@@ -72,5 +72,5 @@ export async function POST(request: NextRequest) {
 }
 
 export function OPTIONS(_request: NextRequest) {
-  return NextResponse.next({ headers });
+  return NextResponse.json({}, { headers });
 }
