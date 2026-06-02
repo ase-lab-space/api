@@ -41,6 +41,7 @@ async function postMessage(msg: string): Promise<boolean> {
     await web.chat.postMessage({
       channel: "#0_form_notifications",
       text: msg,
+      link_names: true,
     });
   } catch (e) {
     return false;
